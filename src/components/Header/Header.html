@@ -1,0 +1,22 @@
+<div class="header">
+    <div class="header-container">
+        <div class="header-parent">
+            <div class="header-hamburger"  
+                v-on:click="showNavBar()">
+                <font-awesome-icon icon="bars" size="2x" />
+            </div>
+                <div class="header-logo">
+                    <router-link :to="{ name: 'Home'}"><span>{{ logo }}</span></router-link>
+                </div>
+                <div class="header-options" 
+                    v-on:click="hideNavBar()"
+                    v-bind:class="{ 'show-hamburger-options': showSideNav }">
+                    <div v-for="(link, index) in links" :key="link.name" 
+                        class="header-option"
+                        :class="addSeperatorClass(index)">
+                        <span> .{{ link.name }}() </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
