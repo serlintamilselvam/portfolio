@@ -31,3 +31,28 @@ body {
 #nav a.router-link-exact-active {
   color: #65D183;
 }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0.55rem 0.75rem 2px #1f2235;
+  border-radius: 0.5rem;
+  transition: transform 1s;
+}
+
+.prof-pic-outline {
+  margin: 0 auto;
+  border: 0.15rem solid;
+  width: 85%;
+  float: left;
+  padding: 2rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 0.5rem;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+  box-shadow: none;
+}

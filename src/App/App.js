@@ -7,12 +7,14 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import Header from '../components/Header/Header.vue'
 import Leftnav from '../components/Leftnav/Leftnav.vue'
+import About from '../components/Sections/About/About.vue'
 
 export default {
     name: 'App',
     components: {
       Header,
-      Leftnav
+      Leftnav,
+      About
     }
   }
 
