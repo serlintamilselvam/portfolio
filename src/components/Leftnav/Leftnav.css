@@ -1,0 +1,39 @@
+.left-nav {
+    top: 40%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 900;
+    right: 0.5rem;
+    width: 8rem;
+}
+
+.profile-links a {
+    display: block;
+    transform: translate(5.5rem);
+    transition: all .5s;
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    text-decoration: none;
+    color: #fff;
+    text-align: left;
+}
+
+.profile-links svg {
+    transition: all .5s;
+}
+
+.profile-links a:hover svg {
+    transform: rotate(1turn);
+    color: #fff;
+}
+
+.profile-links a:hover {
+    border-radius: 1.5rem;
+    transform: translate(1rem);
+    border: .5px solid #65D183;
+}
+
+.profile-links a span {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+}

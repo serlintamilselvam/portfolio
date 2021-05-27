@@ -50,7 +50,8 @@
   user-select: none;
   background-color: #65D183;
   margin-bottom: -7rem!important;
-  /* width: 33vw; */
+  width: 35vw;
+  border-radius: 0.75rem;
 }
 
 .no-gutters {
@@ -69,7 +70,9 @@
 .img-fluid {
   max-width: 100%;
   height: auto;
-  width: 70%;
+  box-shadow: 0 0.55rem 0.75rem 2px #1f2235;
+  border-radius: 0.5rem;
+  transition: transform 1s;
 }
 
 .flex-container {
@@ -82,4 +85,28 @@
 .text-container-wrap {
   position: relative;
   z-index: 1;
+}
+
+h2, h3, h4 {
+  padding: 0 0 2rem 0;
+  line-height: 2rem;
+  letter-spacing: .15rem;
+  margin: 0;
+}
+
+.prof-pic-outline {
+  margin: 0 auto;
+  border: 0.15rem solid;
+  width: 85%;
+  float: left;
+  padding: 2rem;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  border-radius: 0.5rem;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+  box-shadow: none;
 }
