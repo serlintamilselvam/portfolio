@@ -56,3 +56,39 @@ body {
   transform: scale(1.1);
   box-shadow: none;
 }
+
+.under-line {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 10%;
+  margin: 0 auto;
+}
+
+.single-line {
+  width: 100%;
+  height: 0.2rem;
+  background-color: #65D183;
+}
+
+.line-bulb {
+  height: 0.75rem;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+.line-bulb div {
+  width: 2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .prof-pic-outline{
+      border: none;
+      padding: 0;
+      width: 100%;
+  }
+}

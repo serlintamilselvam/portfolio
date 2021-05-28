@@ -1,0 +1,15 @@
+.skills {
+    position: relative;
+    width: 85%;
+    display: block;
+    background-color: #181826;
+    padding: 2rem;
+    box-shadow: 0 0.75rem 0.75rem 2px #080818;
+    float: right;
+    clear: both;
+    margin-top: 10rem;
+}
+
+h2 {
+    color: #65D183;
+}

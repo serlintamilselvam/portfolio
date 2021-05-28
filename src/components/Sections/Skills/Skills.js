@@ -1,10 +1,10 @@
 export default {
-    name: "About",
+    name: "Skills",
     props: {
     },
     data() {
         return {
-            pageName: "about"
+            pageName: "skills"
         }
     }
 }
