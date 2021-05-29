@@ -2,9 +2,24 @@
     position: relative;
     width: 85%;
     display: block;
+}
+
+.section-child {
     background-color: #181826;
     padding: 2rem;
     box-shadow: 0 0.75rem 0.75rem 2px #080818;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: rotateY(120deg);
+    transition: all 2s ease;
+}
+
+.fade-out {
+    animation-delay: 2s;
+    opacity: 1;
+    transform: none;
 }
 
 h2 {
@@ -54,5 +69,7 @@ h2 {
 @media only screen and (max-width: 767px) {
     .about-section{
         margin: 0 auto;
+        width: 95%;
+        margin-top: 5rem;
     }
 }

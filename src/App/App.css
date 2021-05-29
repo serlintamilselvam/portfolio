@@ -38,6 +38,7 @@ body {
   box-shadow: 0 0.55rem 0.75rem 2px #1f2235;
   border-radius: 0.5rem;
   transition: transform 1s;
+  cursor: zoom-in;
 }
 
 .prof-pic-outline {

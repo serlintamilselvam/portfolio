@@ -4,7 +4,14 @@ export default {
     },
     data() {
         return {
+            showDivision: false,
             pageName: "about"
+        }
+    },
+    methods: {
+        showSection() {
+            console.log("Inside this")
+            this.showDivision = !this.showDivision
         }
     }
 }

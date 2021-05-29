@@ -6,7 +6,10 @@
                 <font-awesome-icon icon="bars" size="2x" />
             </div>
                 <div class="header-logo">
-                    <router-link :to="{ name: 'Home'}"><span>{{ logo }}</span></router-link>
+                    <router-link :to="{ name: 'Home'}">
+                        <!-- <span>{{ logo }}</span> -->
+                        <img src="../../assets//images/logo-4-3.png" v-bind:alt="logo"/>
+                    </router-link>
                 </div>
                 <div class="header-options" 
                     v-on:click="hideNavBar()"
