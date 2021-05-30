@@ -88,6 +88,37 @@ textarea::placeholder {
     z-index: -1;
 }
 
+.email-img {
+    margin: 0 auto;
+}
+
+.card-text {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    max-width: 300px;
+}
+
+.name-style {
+    margin: 0;
+    font-weight: bold;
+    color: #65D183;
+    font-size: 1.25rem;
+}
+
+.card {
+    background-color: #181826;
+}
+
+.somespace-above {
+    margin-top: 1rem;
+}
+
+.value-style {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
 @media only screen and (max-width: 767px) {
     .contact-form {
         width: 95%;
@@ -95,4 +126,9 @@ textarea::placeholder {
         margin-top: 5rem;
         float: none;
     }
+
+    .card-text {
+        max-width: none;
+    }
+
 }

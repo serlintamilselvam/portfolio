@@ -8,8 +8,8 @@
                 <div></div>
             </div>
         </div>
-        <div class="contact-content row">
-            <div class="col-lg-7">
+        <b-row class="contact-content">
+            <b-col sm="12" md="7">
                 <b-form @submit="onSubmit" autocomplete="off">
                     <b-form-group>
                         <b-form-input
@@ -37,11 +37,23 @@
                     </b-form-group>
                     <b-button class="common-btn" type="submit" variant="primary">Send Message</b-button>
                 </b-form>
-            </div>
-            <div class="col-lg-5 d-none d-lg-block">
-                <img src="../../../assets//images/rocket_icon.png" alt="message icon">
-            </div>
-        </div>
+            </b-col>
+            <b-col sm="12" md="5">
+                <div class="contact-info">
+                    <div></div>
+                    <b-card>
+                        <b-card-text>
+                            <p class="name-style">Phone:</p>
+                            <a class="value-style" href="tel:8199193446">+1-819-919-3446</a>
+                            <p class="name-style somespace-above">Email:</p>
+                            <a class="value-style" href="mailto:t.serlin94@gmail.com" 
+                            target="_blank">t.serlin94@gmail.com</a>
+                        </b-card-text>
+                    </b-card>
+                </div>
+                <img class="d-none d-lg-block email-img" src="../../../assets//images/rocket_icon.png" alt="message icon">
+            </b-col>
+        </b-row>
     </div>
     <div class="green-overlay d-none d-lg-block"></div>
 </div>
