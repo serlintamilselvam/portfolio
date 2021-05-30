@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuelidate from 'vuelidate'
+import FullPageLoader from '../../FullPageLoader/FullPageLoader.vue'
 import { minLength, required, email } from "vuelidate/lib/validators"
 
 import EmailService from '../../../services/EmailService'
@@ -13,9 +14,13 @@ export default {
     name: 'Contact',
     props: {
     },
+    components: {
+        FullPageLoader
+    },
     data() {
         return {
             pageName: "contact",
+            enableLoader: false,
             isDivisionShown: false,
             submitStatus: null,
             formData: {
@@ -67,24 +72,31 @@ export default {
             this.formData.message = ""
             this.formData.email = ""
         },
+        hideAndShowLoader() {
+            this.enableLoader = !this.enableLoader
+        },
         triggerEmail() {
-            //Perform axios call to send email
+
+            this.hideAndShowLoader()
             let data = this.constructFormData()
 
             EmailObj.sendAdmin(data).then((response) => {
                 let responseData = response.data.response
                 if(responseData.result === 'success') {
                     // Hide Loader
-                    alert("Thnk you for sending email, I will respond to it quickly")
+                    this.hideAndShowLoader()
+                    alert("Thank you for sending email, I will respond to it quickly")
                     this.submitStatus = 'OK'
                     this.clearFormData()
                 } else {
                     // Hide Loader
+                    this.hideAndShowLoader()
                     alert("An error occured while sending email, Please try again")
                     this.submitStatus = 'OK'
                 }
                 }).catch((err) => {
                     // Hide Loader
+                    this.hideAndShowLoader()
                     alert("An error occured while sending email, Please try again")
                     this.submitStatus = 'OK'
                     console.log(err)
