@@ -1,4 +1,4 @@
-<div class="about-section" v-observe-visibility="showSection">
+<div :id="pageName" class="about-section" v-observe-visibility="showSection">
     <div class="section-child  fade-in" 
         v-bind:class="{ 'fade-out': showDivision }">
         <h2>.{{pageName}}()</h2>

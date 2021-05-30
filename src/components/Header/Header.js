@@ -9,13 +9,13 @@ export default {
           id: "home"
         }, {
           name: "about",
-          id: "about-me"
+          id: "about"
         }, {
           name: "resume",
           id: "resume"
         }, {
           name: "contact me",
-          id: "contact-me"
+          id: "contact"
         }]
       }
     },

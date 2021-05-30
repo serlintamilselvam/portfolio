@@ -4,7 +4,7 @@ export default {
     },
     data() {
         return {
-            pageName: "skills",
+            pageName: "resume",
             isDivisionShown: false,
             indexOfSelectedItem: 0,
             scrollerSection: {

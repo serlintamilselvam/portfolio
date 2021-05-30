@@ -1,4 +1,4 @@
-<div class="skills" v-observe-visibility="showSection">
+<div :id="pageName" class="skills" v-observe-visibility="showSection">
     <div class="skills-child fade-in" 
         v-bind:class="{ 'fade-out': isDivisionShown }">
         <h2>.{{pageName}}()</h2>

@@ -7,7 +7,6 @@
             </div>
                 <div class="header-logo">
                     <router-link :to="{ name: 'Home'}">
-                        <!-- <span>{{ logo }}</span> -->
                         <img src="../../assets//images/logo-4-3.png" v-bind:alt="logo"/>
                     </router-link>
                 </div>
@@ -17,7 +16,9 @@
                     <div v-for="(link, index) in links" :key="link.name" 
                         class="header-option"
                         :class="addSeperatorClass(index)">
-                        <span> .{{ link.name }}() </span>
+                        <a href="#" v-scroll-to="`#${link.id}`">
+                            <span> .{{ link.name }}() </span>
+                        </a>
                     </div>
                 </div>
             </div>
