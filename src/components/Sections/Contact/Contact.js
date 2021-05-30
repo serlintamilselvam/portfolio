@@ -43,6 +43,7 @@ export default {
     },
     methods: {
         showSection(isVisible) {
+            console.log("process.env: ", process.env)
             this.isDivisionShown = isVisible
         },
         onSubmit() {
