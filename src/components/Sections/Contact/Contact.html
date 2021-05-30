@@ -10,21 +10,27 @@
         </div>
         <b-row class="contact-content">
             <b-col sm="12" md="7">
-                <b-form @submit="onSubmit" autocomplete="off">
+                <b-form @submit.prevent="onSubmit" autocomplete="off">
                     <b-form-group>
                         <b-form-input
                           v-model="formData.name"
                           placeholder="Name"
-                          required
-                        ></b-form-input>
+                          required />
+                        <div class="error" v-if="!$v.formData.name.required">
+                            Name is required
+                        </div>
+                        <div class="error" v-if="!$v.formData.name.minLength">
+                            Name must have at least {{$v.formData.name.$params.minLength.min}} letters.
+                        </div>
                     </b-form-group>
                     <b-form-group>
                       <b-form-input
                         v-model="formData.email"
                         type="email"
                         placeholder="Email"
-                        required
-                      ></b-form-input>
+                        required />
+                        <div class="error" v-if="!$v.formData.email.required">Email is required</div>
+                        <div class="error" v-if="!$v.formData.email.email">Enter a valid email address</div>
                     </b-form-group>
                     <b-form-group>
                       <b-form-textarea
@@ -34,8 +40,18 @@
                         rows="5"
                         aut
                         required />
+                        <div class="error" v-if="!$v.formData.message.required">
+                            Message is required
+                        </div>
+                        <div class="error" v-if="!$v.formData.message.minLength">
+                            Message must have at least {{$v.formData.name.$params.minLength.min}} letters.
+                        </div>
                     </b-form-group>
-                    <b-button class="common-btn" type="submit" variant="primary">Send Message</b-button>
+                    <b-button
+                        class="common-btn" 
+                        type="submit"
+                        :disabled="submitStatus === 'PENDING'"
+                        variant="primary">Send Message</b-button>
                 </b-form>
             </b-col>
             <b-col sm="12" md="5">
