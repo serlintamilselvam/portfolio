@@ -3,11 +3,18 @@
     width: 85%;
     display: block;
     background-color: #181826;
-    padding: 2rem;
-    box-shadow: 0 0.75rem 0.75rem 2px #080818;
     float: right;
     clear: both;
     margin-top: 10rem;
+}
+
+.about-content {
+    margin-top: 2rem;
+}
+
+.skills-child {
+    padding: 2rem;
+    box-shadow: 0 0.75rem 0.75rem 2px #080818;
 }
 
 h2 {
@@ -28,7 +35,7 @@ h2 {
 }
 
 .bullet-icons {
-    width: 34px;
+    width: 2.5rem;
     height: 100%;
     z-index: 1;
     background-color: #65D183;
@@ -46,22 +53,77 @@ h2 {
     align-items: center;
     cursor: pointer;
     background-color: #65D183;
-    height: 40px;
-    margin: 15px 0;
-    padding: 0 8px;
+    margin: 1.75rem 0;
+    padding: 0 0.55rem;
     border-radius: 20px;
-    width: 30px;
     transition: width .6s ease;
+    height: 3rem;
+    width: 2rem;
+}
+
+.selected-bullet {
+    width: 100%;
 }
 
 .bullet-label {
-    font-size: 14px;
+    font-size: 1rem;
     white-space: nowrap;
 }
 
 .bullet svg {
-    height: 16px;
-    margin: 0 30px 0 0;
+    height: 1.25rem;
+    margin: 0 1.25rem 0 0;
+    font-size: 1.1rem;
+}
+
+.pgrm {
+    margin: 0px 1.5rem 0px -0.25rem;
+}
+
+.scroller-wrap {
+    transition: transform 1s ease-out;
+}
+
+.skills-content {
+    overflow: hidden;
+    box-shadow: 0.25rem 0.25rem 0.25rem rgb(255 255 255 / 20%);
+    height: 420px;
+}
+
+.resume-section {
+    justify-content: space-evenly;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.green-overlay {
+    position: absolute;
+    border-radius: inherit;
+    margin: 0 auto;
+    top: 0;
+    bottom: 0;
+    left: 45%;
+    right: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #65D183;
+    margin-bottom: -7rem!important;
+    width: 35vw;
+    border-radius: 0.75rem;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 991px) {
+    .scroller-wrap {
+        margin-top: 1rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {

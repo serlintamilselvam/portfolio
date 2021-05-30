@@ -86,6 +86,42 @@ body {
   background-color: #fff;
 }
 
+.fade-in {
+  opacity: 0;
+  transform: rotateY(120deg);
+  transition: all 2s ease;
+}
+
+.fade-out {
+  animation-delay: 2s;
+  opacity: 1;
+  transform: none;
+}
+
+.common-btn {
+  background-color: rgba(1, 5, 205, 0.3);
+  background-image: linear-gradient(to top, rgba(98, 174, 120, 0) 0, rgba(98, 174, 120, 1) 60%, rgba(98, 174, 120, 1));
+  font-size: 1.25rem;
+  border-color: #FFF;
+}
+
+.common-btn:hover {
+  border-color: #fff;
+  background-image: linear-gradient(to top, #0105CD, #0105CD 60%, #0105CD);
+  background-color: rgba(1, 5, 205, 0.3);
+}
+
+.form-control {
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 1rem 0.75rem;
+}
+
+.form-control:focus, input, select, textarea {
+  background-color: rgba(255,255,255,0.5);
+}
+
 @media only screen and (max-width: 767px) {
   .prof-pic-outline{
       border: none;

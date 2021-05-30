@@ -4,11 +4,12 @@ import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import VueObserveVisibility from 'vue-observe-visibility'
-import { faBars, faHistory, faLaptop, faMapMarkerAlt, faPalette, faPaperclip, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faHeart, faHistory, faLaptop, faMapMarkerAlt, faPalette, faPaperclip, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faBars, faGithub, faInstagram, 
-  faLinkedin, faUserGraduate, faMapMarkerAlt, faHistory, faLaptop, faPalette, faPaperclip)
+  faLinkedin, faUserGraduate, faMapMarkerAlt, 
+  faHistory, faLaptop, faPalette, faPaperclip, faHeart)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueObserveVisibility)

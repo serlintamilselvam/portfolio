@@ -9,6 +9,8 @@ import Header from '../components/Header/Header.vue'
 import Leftnav from '../components/Leftnav/Leftnav.vue'
 import About from '../components/Sections/About/About.vue'
 import Skills from '../components/Sections/Skills/Skills.vue'
+import Contact from '../components/Sections/Contact/Contact.vue'
+import Footer from '../components/Footer/Footer.vue'
 
 export default {
     name: 'App',
@@ -16,7 +18,9 @@ export default {
       Header,
       Leftnav,
       About,
-      Skills
+      Skills,
+      Contact,
+      Footer
     }
   }
 

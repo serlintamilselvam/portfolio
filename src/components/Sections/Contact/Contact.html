@@ -1,0 +1,47 @@
+<div class="contact-form" v-observe-visibility="showSection">
+    <div class="section-child fade-in" 
+        v-bind:class="{ 'fade-out': isDivisionShown }">
+        <h2>.{{pageName}}()</h2>
+        <div class="under-line">
+            <div class="single-line"></div>
+            <div class="line-bulb">
+                <div></div>
+            </div>
+        </div>
+        <div class="contact-content row">
+            <div class="col-lg-7">
+                <b-form @submit="onSubmit" autocomplete="off">
+                    <b-form-group>
+                        <b-form-input
+                          v-model="formData.name"
+                          placeholder="Name"
+                          required
+                        ></b-form-input>
+                    </b-form-group>
+                    <b-form-group>
+                      <b-form-input
+                        v-model="formData.email"
+                        type="email"
+                        placeholder="Email"
+                        required
+                      ></b-form-input>
+                    </b-form-group>
+                    <b-form-group>
+                      <b-form-textarea
+                        id="textarea"
+                        v-model="formData.message"
+                        placeholder="Message"
+                        rows="5"
+                        aut
+                        required />
+                    </b-form-group>
+                    <b-button class="common-btn" type="submit" variant="primary">Send Message</b-button>
+                </b-form>
+            </div>
+            <div class="col-lg-5 d-none d-lg-block">
+                <img src="../../../assets//images/rocket_icon.png" alt="message icon">
+            </div>
+        </div>
+    </div>
+    <div class="green-overlay d-none d-lg-block"></div>
+</div>

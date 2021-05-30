@@ -10,18 +10,6 @@
     box-shadow: 0 0.75rem 0.75rem 2px #080818;
 }
 
-.fade-in {
-    opacity: 0;
-    transform: rotateY(120deg);
-    transition: all 2s ease;
-}
-
-.fade-out {
-    animation-delay: 2s;
-    opacity: 1;
-    transform: none;
-}
-
 h2 {
     color: #65D183;
 }
@@ -43,6 +31,7 @@ h2 {
 
 .about-content {
     align-items: center;
+    margin-top: 2rem;
 }
 
 .green-overlay {

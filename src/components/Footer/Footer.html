@@ -1,0 +1,22 @@
+<div class="footer-wrapper">
+    <div class="footer">
+        <b-row class="row">
+            <b-col sm="12" md="6" order-md="2">
+                <a v-for="(item, key) in socialMedia"
+                    :title="item.icon"
+                    :key="key"
+                    v-bind:href="item.link" target="_blank">
+                    <font-awesome-icon :icon="['fab', item.icon]" size="2x" :color="item.color" />
+                </a>
+            </b-col>
+            <b-col sm="12" md="6" order-md="1">
+                <div class="credits">
+                    Site designed with <font-awesome-icon :icon="['fas', 'heart']" color="red" /> by Serlin
+                </div>
+            </b-col>
+        </b-row>
+        <p class="copy-right">
+            &copy; All rights reserved.
+        </p>
+    </div>
+</div>

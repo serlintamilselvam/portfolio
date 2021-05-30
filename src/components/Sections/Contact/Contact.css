@@ -1,0 +1,98 @@
+.contact-form {
+    position: relative;
+    width: 85%;
+    display: block;
+    background-color: #181826;
+    clear: both;
+    margin-top: 10rem;
+    float: left;
+}
+
+.contact-content {
+    margin-top: 2rem;
+}
+
+.section-child {
+    padding: 2rem;
+    box-shadow: 0 0.75rem 0.75rem 2px #080818;
+}
+
+h2 {
+    color: #65D183;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+    margin-top: 1.25rem;
+}
+
+input::placeholder { 
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+input::placeholder {
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+    opacity: 1;
+    font-size: 1.15rem;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 1.15rem;
+}
+  
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    font-size: 1.15rem;
+}
+
+textarea::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff; 
+    font-size: 1.15rem;
+}
+
+textarea:-ms-input-placeholder {
+    color: #fff;  
+    font-size: 1.15rem;
+}
+
+textarea::placeholder {
+    color: #fff;  
+    font-size: 1.15rem;
+}
+
+.green-overlay {
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    bottom: 0;
+    left: 5rem;
+    right: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #65D183;
+    margin-bottom: -7rem!important;
+    width: 35vw;
+    border-radius: 0.75rem;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-form {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 5rem;
+        float: none;
+    }
+}

@@ -1,41 +1,39 @@
-<div class="skills">
-    <h2>.{{pageName}}()</h2>
-    <div class="under-line">
-        <div class="single-line"></div>
-        <div class="line-bulb">
-            <div></div>
+<div class="skills" v-observe-visibility="showSection">
+    <div class="skills-child fade-in" 
+        v-bind:class="{ 'fade-out': isDivisionShown }">
+        <h2>.{{pageName}}()</h2>
+        <div class="under-line">
+            <div class="single-line"></div>
+            <div class="line-bulb">
+                <div></div>
+            </div>
         </div>
-    </div>
-    <div class="about-content row">
-        <div class="col-lg-3">
-            <div class="resume-bullets">
-                <div class="bullet-container">
-                    <div class="bullet-icons"></div>
-                    <div class="bullets">
-                        <div class="bullet selected-bullet">
-                            <font-awesome-icon :icon="['fas', 'user-graduate']" />
-                                <span class="bullet-label">Education()</span>
-                            </div><div class="bullet">
-                                <font-awesome-icon :icon="['fas', 'history']" />
-                                <span class="bullet-label">Work History()</span>
-                            </div>
-                            <div class="bullet">
-                                <font-awesome-icon :icon="['fas', 'laptop']" />
-                                <span class="bullet-label">Programming Skills()</span>
-                            </div>
-                            <div class="bullet">
-                                <font-awesome-icon :icon="['fas', 'paperclip']" />
-                                <span class="bullet-label">Projects()</span>
-                            </div>
-                            <div class="bullet">
-                                <font-awesome-icon :icon="['fas', 'palette']" />
-                                <span class="bullet-label">Interests()</span>
+        <div class="about-content row">
+            <div class="col-lg-3">
+                <div class="resume-bullets">
+                    <div class="bullet-container">
+                        <div class="bullet-icons"></div>
+                        <div class="bullets">
+                            <div class="bullet" 
+                                v-on:click="loadSkill(index)"
+                                v-bind:class="{ 'selected-bullet': checkForIndex(index) }"
+                                v-for="(bullet, index) in resumeBullets" :key="index">
+                                <font-awesome-icon :icon="['fas', bullet.icon]" />
+                                <span class="bullet-label"> {{bullet.label}} </span>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        <div class="col-lg-9">
+            </div>
+            <div class="col-lg-9 skills-content">
+                <div class="scroller-wrap" v-bind:style="scrollerSection.styleObject">
+                    <div class="resume-section"
+                        v-for="(bullet, index) in resumeBullets" :key="index">
+                        {{bullet.label}}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="green-overlay d-none d-lg-block"></div>
 </div>

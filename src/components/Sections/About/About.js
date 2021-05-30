@@ -9,9 +9,8 @@ export default {
         }
     },
     methods: {
-        showSection() {
-            console.log("Inside this")
-            this.showDivision = !this.showDivision
+        showSection(isVisible) {
+            this.showDivision = isVisible
         }
     }
 }
