@@ -19,6 +19,7 @@
 
 h2 {
     color: #65D183;
+    text-transform: capitalize;
 }
 
 fieldset {

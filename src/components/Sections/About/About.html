@@ -1,7 +1,7 @@
 <div :id="pageName" class="about-section" v-observe-visibility="showSection">
     <div class="section-child  fade-in" 
         v-bind:class="{ 'fade-out': showDivision }">
-        <h2>.{{pageName}}()</h2>
+        <h2><{{pageName}} /></h2>
         <div class="under-line">
             <div class="single-line"></div>
             <div class="line-bulb">
@@ -15,17 +15,17 @@
                 </div>
             </div>
             <div class="col-lg-6 text-content">
-                <div class="text-content-1">
-                    React makes it painless to create interactive UIs. Design simple views for each state in your application, and React will efficiently update and render just the right components when your data changes.
-                </div>
-                <div class="education-info">
-                    <div>
-                        <font-awesome-icon :icon="['fas', 'user-graduate']" size="2x" color="#65D183" /><span>  Master of Science, Bishop's University, Canada</span>
+                <div class="text-content-1" 
+                    v-for="(content, key) in contents" :key="key">{{content}}</div>
+                <!-- <div class="education-info">
+                    <div v-for="(icon, key) in icons" :key="key">
+                        <font-awesome-icon 
+                            :icon="['fas', icon.name]" 
+                            size="2x" 
+                            :color="icon.color" />
+                            <span>{{icon.value}}</span>
                     </div>
-                    <div>
-                        <font-awesome-icon :icon="['fas', 'map-marker-alt']" size="2x" color="#65D183" /><span>  Quebec, Canada</span>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

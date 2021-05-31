@@ -12,6 +12,7 @@
 
 h2 {
     color: #65D183;
+    text-transform: capitalize;
 }
 
 .text-content {
@@ -23,6 +24,7 @@ h2 {
     line-height: 2rem;
     letter-spacing: .15rem;
     text-align: left;
+    margin-bottom: 2rem;
 }
 
 .prof-pic-outline {

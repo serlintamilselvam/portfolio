@@ -5,7 +5,7 @@ export default {
             links: {
                 github: "https://github.com/serlintamilselvam",
                 linkedIn: "https://www.linkedin.com/in/serlin-tamilselvam",
-                instagram: "https://www.linkedin.com/in/serlin-tamilselvam",
+                instagram: "https://www.instagram.com/serlintamilselvam",
             }
         }
     },

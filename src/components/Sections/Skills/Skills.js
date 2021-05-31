@@ -14,19 +14,19 @@ export default {
                 }
             },
             resumeBullets: [{
-                label: "Education()",
+                label: "<Education />",
                 icon: 'user-graduate'
             }, {
-                label: "Work History()",
+                label: "<Work History />",
                 icon: 'history'
             }, {
-                label: "Programming Skills()",
+                label: "<Programming Skills />",
                 icon: 'laptop'
             },{
-                label: "Projects()",
+                label: "<Projects />",
                 icon: 'paperclip'
             },{
-                label: "Interests()",
+                label: "<Interests />",
                 icon: 'palette'
             }]
         }

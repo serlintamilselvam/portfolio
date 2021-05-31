@@ -10,17 +10,22 @@
   <b-row class="align-items-center flex-container">
     <b-col sm="12" lg="6" md="5" order="2" order-md="1" class="left-align-text">
       <h2 class="title-text">
-        Hi, I'm <span class="green">Serlin</span>
+        Hi, I'm <span class="green">Serlin</span><span class="waving-hand">&#128075;</span>
       </h2>
-      <h3 class="sub-title-text">
-        Full Stack developer!
-      </h3>
-      <h4 class="">
-        Knack of building applications with front and back end operations.
-      </h4>
+      <vue-typed-js
+        class="sub-title-text"
+        :typeSpeed="50"
+        :backSpeed="10"
+        :loop="typedSettings.loop"
+        :showCursor="typedSettings.showCursor"
+        :cursorChar="typedSettings.cursorChar"
+        :strings="typedSettings.content">
+        <span class="typing"></span>
+      </vue-typed-js>
+      <h4>{{smallDescription}}</h4>
       <div class="text-center">
         <b-button target="_blank" 
-          href="https://drive.google.com/file/d/1s7-eTwBpqhmV6aCVGQVu9dS6ZB9UikfS/view?usp=sharing" 
+          :href="resumeLink" 
           class="common-btn" 
           variant="link">Download Resume
         </b-button>
