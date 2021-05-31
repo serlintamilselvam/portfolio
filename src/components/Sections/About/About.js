@@ -7,9 +7,9 @@ export default {
             showDivision: false,
             pageName: "about",
             contents: [
-                "I am a recent computer science post graduate from Bishop's University, Canada",
-                "I love writing clean, scalable and well-commented code. Everyone should be open to cross-platform and be comfortable working with different teams.",
-                "Not a fan of Netflix and chill, I love doing activities which rushes my adrenaline."
+                'I am a recent computer science post graduate from Bishop&#39;s University, Canada&#127891;',
+                'I love writing clean, scalable and well-commented code. Everyone should be open to cross-platform and be comfortable working with different teams.',
+                'Not a fan of Netflix and chill, I <span class="beating-heart">&#128151;</span> activities like biking, sky-diving which rushes my adrenaline&#128693;'
             ],
             icons: [{
                 name: "user-graduate",

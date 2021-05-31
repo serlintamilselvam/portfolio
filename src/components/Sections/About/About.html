@@ -16,16 +16,8 @@
             </div>
             <div class="col-lg-6 text-content">
                 <div class="text-content-1" 
-                    v-for="(content, key) in contents" :key="key">{{content}}</div>
-                <!-- <div class="education-info">
-                    <div v-for="(icon, key) in icons" :key="key">
-                        <font-awesome-icon 
-                            :icon="['fas', icon.name]" 
-                            size="2x" 
-                            :color="icon.color" />
-                            <span>{{icon.value}}</span>
-                    </div>
-                </div> -->
+                    v-for="(content, key) in contents" :key="key" 
+                    v-html="content"></div>
             </div>
         </div>
     </div>

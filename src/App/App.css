@@ -125,6 +125,28 @@ body {
   background-color: rgba(255,255,255,0.5);
 }
 
+@keyframes heart-shake {
+  0% { transform: scale(1) }
+  10% { transform: scale(1.15) }
+  20% { transform: scale(1.25) }
+  30% { transform: scale(1.35) }
+  40% { transform: scale(1.25) }
+  50% { transform: scale(1.10) }
+  60% { transform: scale(1.05) }
+  100% { transform: scale(1) }
+}
+
+.beating-heart {
+  -webkit-animation-name: heart-shake;
+  animation-name: heart-shake;
+  -webkit-animation-duration: 2.1s;
+  animation-duration: 2.1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
 @media only screen and (max-width: 767px) {
   .prof-pic-outline{
       border: none;

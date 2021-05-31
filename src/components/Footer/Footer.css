@@ -18,11 +18,15 @@ a {
     padding: 0 1.5rem;
 }
 
-.copy-right {
+.copy-right, .go-green {
     margin: 0;
     font-size: 1rem;
-    font-family: sans-serif;
     margin-top: 1rem;
+}
+
+.copy-right {
+    font-family: sans-serif;
+    margin-top: 0.5rem;
 }
 
 @media only screen and (max-width: 767px) {
