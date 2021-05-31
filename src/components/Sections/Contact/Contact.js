@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuelidate from 'vuelidate'
 import FullPageLoader from '../../FullPageLoader/FullPageLoader.vue'
 import { minLength, required, email } from "vuelidate/lib/validators"
-
 import EmailService from '../../../services/EmailService'
 import { APISettings } from '../../../api'
 
@@ -85,19 +84,19 @@ export default {
                 if(responseData.result === 'success') {
                     // Hide Loader
                     this.hideAndShowLoader()
-                    alert("Thank you for sending email, I will respond to it quickly")
+                    alert("Thank you for sending message. I'll get back to you quickly")
                     this.submitStatus = 'OK'
                     this.clearFormData()
                 } else {
                     // Hide Loader
                     this.hideAndShowLoader()
-                    alert("An error occured while sending email, Please try again")
+                    alert("Oops!! An error occurred while submitting. Please try after sometime")
                     this.submitStatus = 'OK'
                 }
                 }).catch((err) => {
                     // Hide Loader
                     this.hideAndShowLoader()
-                    alert("An error occured while sending email, Please try again")
+                    alert("Oops!! An error occurred while submitting. Please try after sometime")
                     this.submitStatus = 'OK'
                     console.log(err)
                 })
