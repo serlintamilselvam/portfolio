@@ -30,9 +30,9 @@ h2 {
 .bullet-container {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 100%;
     position: relative;
+    height: 48rem;
 }
 
 .bullet-icons {
@@ -88,15 +88,17 @@ h2 {
 .skills-content {
     overflow: hidden;
     box-shadow: 0.25rem 0.25rem 0.25rem rgb(255 255 255 / 20%);
-    height: 420px;
+    height: 48rem;
 }
 
 .resume-section {
-    justify-content: space-evenly;
-    height: 400px;
-    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 46rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
 }
 
 .green-overlay {
@@ -121,9 +123,59 @@ h2 {
     z-index: -1;
 }
 
-@media only screen and (max-width: 991px) {
-    .scroller-wrap {
-        margin-top: 1rem;
+.resume-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-heading {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading-bullet {
+    position: absolute;
+    left: -30px;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    border-radius: 50%;
+    background-color: #65D183;
+}
+
+.resume-heading span {
+    color: #65D183;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.heading-date {
+    background-color: #65D183;
+    padding: 0.2rem 0.7rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.resume-sub-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0.5rem 0rem 0rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.resume-description {
+    text-align: left;
+    font-size: 1rem;
+    margin: 0.5rem 0rem 0rem;
+    text-align: left;
+}
+
+@media only screen and (max-width: 992px) {
+    .bullet-container {
+        height: 100%;
     }
 }
 
@@ -133,5 +185,21 @@ h2 {
         margin: 0 auto;
         margin-top: 5rem;
         float: none;
+    }
+
+    .resume-heading span {
+        font-size: 1rem;
+    }
+
+    .heading-date {
+        font-size: 0.75rem;
+    }
+
+    .resume-heading {
+        text-align: left;
+    }
+
+    .resume-section {
+        width: 100%;
     }
 }
