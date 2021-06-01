@@ -8,13 +8,13 @@ import VueScrollTo from 'vue-scrollto'
 import VueTypedJs from 'vue-typed-js'
 import VueLoaders from 'vue-loaders'
 import { faBars, faCloud, faDatabase, faHeart, faHistory, faLaptop, faLeaf, faMapMarkerAlt, faPalette, faPaperclip, faUserGraduate } from '@fortawesome/free-solid-svg-icons'
-import { faAngular, faCss3Alt, faGit, faGithub, faHtml5, faInstagram, faJava, faJira, faJsSquare, faLaravel, faLinkedin, faMagento, faNode, faPhp, faReact, faSass, faVuejs, faWordpress } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faCss3Alt, faDocker, faGit, faGithub, faHtml5, faInstagram, faJava, faJira, faJsSquare, faLaravel, faLinkedin, faMagento, faNode, faNpm, faPhp, faPython, faReact, faSass, faVuejs, faWordpress } from '@fortawesome/free-brands-svg-icons'
 
 library.add(faBars, faGithub, faInstagram, 
   faLinkedin, faUserGraduate, faMapMarkerAlt, 
   faHistory, faLaptop, faPalette, faPaperclip, faHeart,
-  faHtml5, faCss3Alt, faJsSquare, faReact, faVuejs, faAngular ,faNode, faPhp, faJava, faJira,
-  faSass, faGit, faLaravel, faMagento, faDatabase, faLeaf, faCloud, faWordpress)
+  faHtml5, faCss3Alt, faJsSquare, faReact, faVuejs, faAngular ,faNode, faPhp, faJava, faJira, faDocker,
+  faSass, faGit, faLaravel, faMagento, faDatabase, faLeaf, faCloud, faWordpress, faNpm, faPython)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('vue-loaders', VueLoaders.component)

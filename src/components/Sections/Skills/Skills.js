@@ -8,7 +8,7 @@ export default {
             isDivisionShown: false,
             indexOfSelectedItem: 0,
             scrollerSection: {
-                baseHeight: 46,
+                baseHeight: 48,
                 styleObject: {
                     transform: 'translateY(0px)'
                 }
@@ -45,10 +45,92 @@ export default {
                         '- Created incidents in ServiceNow, monitored the status and progressed towards resolution of assigned incidents.']
                 }]
             }, {
-                label: "<Programming Skills />",
+                label: "<Skills />",
                 icon: 'laptop',
                 languages: [{
-                    icon: ''
+                    icon: 'html5',
+                    brand: 'fab',
+                    name: 'HTML 5'
+                }, {
+                    icon: 'sass',
+                    brand: 'fab',
+                    name: 'SASS'
+                },{
+                    icon: 'css3-alt',
+                    brand: 'fab',
+                    name: 'CSS'
+                },{
+                    icon: 'js-square',
+                    brand: 'fab',
+                    name: 'JavaScript'
+                },{
+                    icon: 'react',
+                    brand: 'fab',
+                    name: 'React.js'
+                },{
+                    icon: 'angular',
+                    brand: 'fab',
+                    name: 'Angular'
+                },{
+                    icon: 'vuejs',
+                    brand: 'fab',
+                    name: 'Vue.js'
+                },{
+                    icon: 'node',
+                    brand: 'fab',
+                    name: 'Node'
+                },{
+                    icon: 'npm',
+                    brand: 'fab',
+                    name: 'NPM'
+                },{
+                    icon: 'php',
+                    brand: 'fab',
+                    name: 'PHP'
+                },{
+                    icon: 'java',
+                    brand: 'fab',
+                    name: 'Java'
+                },{
+                    icon: 'python',
+                    brand: 'fab',
+                    name: 'Python'
+                },{
+                    icon: 'database',
+                    brand: 'fas',
+                    name: 'MySQL'
+                }, {
+                    icon: 'leaf',
+                    brand: 'fas',
+                    name: 'MongoDB'
+                }, {
+                    icon: 'magento',
+                    brand: 'fab',
+                    name: 'Magento'
+                }, {
+                    icon: 'laravel',
+                    brand: 'fab',
+                    name: 'Laravel'
+                },{
+                    icon: 'wordpress',
+                    brand: 'fab',
+                    name: 'Wordpress'
+                }, {
+                    icon: 'git',
+                    brand: 'fab',
+                    name: 'Git'
+                }, {
+                    icon: 'jira',
+                    brand: 'fab',
+                    name: 'Jira'
+                }, {
+                    icon: 'cloud',
+                    brand: 'fas',
+                    name: 'Azure'
+                }, {
+                    icon: 'docker',
+                    brand: 'fab',
+                    name: 'Docker'
                 }]
             },{
                 label: "<Projects />",

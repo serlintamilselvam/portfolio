@@ -88,14 +88,14 @@ h2 {
 .skills-content {
     overflow: hidden;
     box-shadow: 0.25rem 0.25rem 0.25rem rgb(255 255 255 / 20%);
-    height: 48rem;
+    height: 50rem;
 }
 
 .resume-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 46rem;
+    height: 48rem;
     width: 80%;
     margin: 0 auto;
     margin-top: 1rem;
@@ -173,6 +173,22 @@ h2 {
     text-align: left;
 }
 
+.icons-section li {
+    text-align: center;
+    margin: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icons-section li:hover {
+    color: #65D183;
+}
+
+.icons-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 @media only screen and (max-width: 992px) {
     .bullet-container {
         height: 100%;
@@ -201,5 +217,13 @@ h2 {
 
     .resume-section {
         width: 100%;
+    }
+    .icons-section li {
+        margin: 0;
+        margin-right: 1.5rem;
+        font-size: 1rem;
+    }
+    .icons-section li svg{
+        width: 1.5rem;
     }
 }
