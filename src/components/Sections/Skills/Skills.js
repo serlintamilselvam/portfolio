@@ -43,7 +43,7 @@ export default {
                     title: 'CGI Inc, Canada',
                     subtitle: 'Technical Consultant - Part Time, Canada',
                     date: '2020-Present',
-                    roles: ['- Assisted BMO employees across North America for IT-related issues or requests over telephone and email.',
+                    roles: ['- Assisted multinational bank employees across North America for IT-related issues or requests over telephone and email.',
                         '- Created incidents in ServiceNow, monitored the status and progressed towards resolution of assigned incidents.']
                 }]
             }, {
