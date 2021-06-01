@@ -19,11 +19,13 @@ export default {
                 content: [{
                     title: 'Bishop&#39;s University, Canada',
                     date: '2019 - 2021',
-                    subtitle: 'Master of Science in Computer Science'
+                    subtitle: 'Master of Science in Computer Science',
+                    roles: ['- Adv Database Software Design, Data Mining, Deep Learning, Adv. topics in Algorithms, Computer Games Design (C#)']
                 }, {
                     title: 'Anna University, India',
                     date: '2012 - 2016',
-                    subtitle: 'Bachelor of Engineering in Computer Science'         
+                    subtitle: 'Bachelor of Engineering in Computer Science',
+                    roles: ['- Object Oriented Programming, Data Structures, Advance Java Programming']     
                 }]
             }, {
                 label: "<Work History />",
@@ -135,11 +137,37 @@ export default {
             },{
                 label: "<Projects />",
                 icon: 'paperclip',
-                content: []
+                content: [{
+                    title: 'Cricket Player Information',
+                    subtitle: 'Technologies Used: SpringBoot, CosmosDB (Mongo API), Azure App Service',
+                    date: '2021',
+                    roles: ['- Published a webservice to get player information based on different parameters',
+                        '- Scrapped information using python and dumped into CosmosDB']
+                }, {
+                    title: 'Personal Portfolio Website',
+                    subtitle: 'Technologies Used: Vue.js, Bootsrap, Node.js, Express.js, Azure App Service',
+                    date: '2021',
+                    roles: ['- A Personal Portfolio website to showcase all my details and projects at one place.']
+                }, {
+                    title: 'Clothing Store - Website',
+                    subtitle: 'Technologies Used: Angular, Laravel, MySQL, Azure App Service',
+                    date: '2019',
+                    roles: ['- E-Commerce website to add/remove and purchase products']
+                }]
             },{
                 label: "<Interests />",
                 icon: 'palette',
-                content: []
+                content: [{
+                    title: 'Sports',
+                    roles: ['- I am biggest fan of test cricket&#127951, particularly if it is ASHES',
+                        '- You can find me in a badmintion court&#127992; || snooker&#127921; table if !cricket']
+                }, {
+                    title: 'Cooking',
+                    roles: ['- Moved from consumer to producer, Lately developed a fond towards cooking. Thanks&#128588; to the pandemic']
+                }, {
+                    title: 'Music',
+                    roles: ['- Listening to soothing music is something i can never compromise.']
+                }]
             }]
         }
     },

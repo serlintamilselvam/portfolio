@@ -112,6 +112,13 @@ h2, h3, h4, .sub-title-text {
   display: inline-block;
 }
 
+/* .watermark-img {
+  background-image: url('../../assets/images/background_logo.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+} */
+
 @media only screen and (max-width: 767px) {
   .home {
     width: 90%;
