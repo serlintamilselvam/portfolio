@@ -159,7 +159,7 @@ export default {
                 icon: 'palette',
                 content: [{
                     title: 'Sports',
-                    roles: ['- I am biggest fan of test cricket&#127951, particularly if it is ASHES',
+                    roles: ['- I am a biggest fan of test cricket&#127951, particularly if it is ASHES',
                         '- You can find me in a badmintion court&#127992; || snooker&#127921; table if !cricket']
                 }, {
                     title: 'Cooking',
