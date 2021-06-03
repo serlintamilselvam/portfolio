@@ -2,7 +2,7 @@
 
 A Vue.js personal porfolio website to showcase all my details and projects at one place.
 
-The project is created with <a href="https://vuejs.org/v2/guide/installation.html" rel="nofollow" target="_blank">Vue Cli</a>
+The project is created using <a href="https://vuejs.org/v2/guide/installation.html" rel="nofollow" target="_blank">Vue Cli</a>
 
 
 ## Project setup
