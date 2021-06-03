@@ -5,6 +5,7 @@
                 <a v-for="(item, key) in socialMedia"
                     :title="item.icon"
                     :key="key"
+                    rel="nofollow"
                     v-bind:href="item.link" target="_blank">
                     <font-awesome-icon :icon="['fab', item.icon]" size="2x" :color="item.color" />
                 </a>
