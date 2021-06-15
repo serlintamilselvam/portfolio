@@ -28,6 +28,3 @@ npm run lint
 The website is hosted in <a href="https://azure.microsoft.com/" rel="nofollow" target="_blank">Microsoft's Azure</a> as a static web page.
 
 Check out the website here at: <a href="https://www.serlintamilselvam.tech" rel="nofollow" target="_blank">https://www.serlintamilselvam.tech</a>
-
-### Designed by:
-1. Jayashree Srinivasan
